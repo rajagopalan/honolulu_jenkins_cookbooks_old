@@ -1,0 +1,40 @@
+DEPENDENCIES
+  apache2
+  firefox
+  jenkins
+  magic_shell
+  python
+  rvm
+    git: git://github.com/fnichol/chef-rvm.git
+    revision: 8a877e9b497f8fb06dfe6f5975561331b3924243
+  yum
+
+GRAPH
+  apache2 (3.0.0)
+    iptables (>= 0.0.0)
+    logrotate (>= 0.0.0)
+  apt (2.6.0)
+  build-essential (2.1.3)
+  chef_gem (0.1.0)
+  firefox (2.0.0)
+  iptables (0.14.0)
+  java (1.29.0)
+  jenkins (2.2.1)
+    apt (~> 2.0)
+    runit (~> 1.5)
+    yum (~> 3.0)
+  logrotate (1.7.0)
+  magic_shell (1.0.0)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  rvm (0.10.1)
+    chef_gem (>= 0.0.0)
+    java (>= 0.0.0)
+  yum (3.5.1)
+  yum-epel (0.5.3)
+    yum (~> 3.0)
